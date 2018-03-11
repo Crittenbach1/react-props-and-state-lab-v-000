@@ -51,7 +51,7 @@ class App extends React.Component {
         <div className="ui container">
           <div className="ui grid">
             <div className="four wide column">
-              <Filters 
+              <Filters
                 filters={this.state.filters}
                 onChangeType={this.handleChangeFilterType}
                 onFindPetsClick={this.fetchPets}
@@ -59,8 +59,8 @@ class App extends React.Component {
             </div>
             <div className="twelve wide column">
               <PetBrowser
-                 pets={this.state.pets} 
-                 adoptedPets={this.state.adoptedPets} 
+                 pets={this.state.pets}
+                 adoptedPets={this.state.adoptedPets}
                  onAdoptPet={this.handleAdoptPet}
               />
             </div>
@@ -72,4 +72,3 @@ class App extends React.Component {
 }
 
 export default App;
-
